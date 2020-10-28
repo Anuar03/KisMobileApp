@@ -14,20 +14,20 @@ const OnboardingScreen = ({navigation}) => {
                 {
                     backgroundColor: '#fff',
                     image: <Image source={require('../assets/onboarding-img1.png')} />,
-                    title: 'Onboarding',
-                    subtitle: 'Done with React Native Onboarding Swiper',
+                    title: 'Изучайте',
+                    subtitle: 'Демонстрационное приложение мобильного ТБД',
                 },
                 {
                     backgroundColor: '#fff',
                     image: <Image source={require('../assets/onboarding-img2.png')} />,
-                    title: 'Onboarding',
-                    subtitle: 'Done with React Native Onboarding Swiper',
+                    title: 'Почувствуйте',
+                    subtitle: 'Данные всегда рядом',
                 },
                 {
                     backgroundColor: '#fff',
-                    image: <Image source={require('../assets/onboarding-img2.png')} />,
-                    title: 'Onboarding',
-                    subtitle: 'Done with React Native Onboarding Swiper',
+                    image: <Image source={require('../assets/onboarding-img3.png')} />,
+                    title: 'Шшшшикааарно',
+                    subtitle: 'Цитата Эрик Картман',
                 }
             ]}
         />

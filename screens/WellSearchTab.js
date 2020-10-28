@@ -16,7 +16,7 @@ const WellSearchTab = ({navigation}) => {
             initialRouteName='WellSearch'
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#3a9cde',
+                    backgroundColor: '#017bff',
                 },
                 headerTintColor: '#fff',
                 headerTitleStyle: {
@@ -27,21 +27,35 @@ const WellSearchTab = ({navigation}) => {
         >
             <WellSearchStack.Screen 
                 name='WellSearch' 
-                component={WellBar}
+                component={WellsSearch}
                 options={{
                     title: 'Поиск Скважин',
                     headerLeft: () => (
                         <Icon.Button 
                             name='ios-menu' 
                             size={25} 
-                            backgroundColor='#3a9cde'
+                            backgroundColor='#017bff'
                             onPress={() => navigation.openDrawer()}>
                         </Icon.Button>
                     ),
                     headerRight: () => (
                         <Icon.Button
                             size={25} 
-                            backgroundColor='#3a9cde'
+                            backgroundColor='#017bff'
+                            onPress={() => {}}>
+                        </Icon.Button>
+                    )
+                }}/>
+
+                <WellSearchStack.Screen 
+                name='Well'
+                component={WellBar}
+                options={{
+                    title: 'Скважина',
+                    headerRight: () => (
+                        <Icon.Button
+                            size={25} 
+                            backgroundColor='#017bff'
                             onPress={() => {}}>
                         </Icon.Button>
                     )

@@ -15,7 +15,7 @@ const BasicIndicatorsTab = ({navigation}) => {
             initialRouteName='BasicIndicators'
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#3a9cde',
+                    backgroundColor: '#017bff',
                 },
                 headerTintColor: '#fff',
                 headerTitleStyle: {
@@ -33,14 +33,14 @@ const BasicIndicatorsTab = ({navigation}) => {
                         <Icon.Button 
                             name='ios-menu' 
                             size={25} 
-                            backgroundColor='#3a9cde'
+                            backgroundColor='#017bff'
                             onPress={() => navigation.openDrawer()}>
                         </Icon.Button>
                     ),
                     headerRight: () => (
                         <Icon.Button
                             size={25} 
-                            backgroundColor='#3a9cde'
+                            backgroundColor='#017bff'
                             onPress={() => {}}>
                         </Icon.Button>
                     )

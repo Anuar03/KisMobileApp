@@ -56,7 +56,7 @@ const LoginScreen = ({navigation}) => {
                         <TextInput 
                             placeholder='Логин'
                             autoCapitalize='none'
-                            style={styles.TextInput}
+                            style={styles.textInput}
                             onChangeText={val => loginChange(val)}
                         />
                     </View>
@@ -69,7 +69,7 @@ const LoginScreen = ({navigation}) => {
                             placeholder='Пароль'
                             secureTextEntry={data.secureTextEntry}
                             autoCapitalize='none'
-                            style={styles.TextInput}
+                            style={styles.textInput}
                         />
                     </View>
                     <TouchableOpacity
@@ -85,7 +85,7 @@ const LoginScreen = ({navigation}) => {
                         buttonStyle={{
                             color: '#3a9cde',
                             borderRadius: 15,
-                            backgroundColor: '#3a9cde'
+                            backgroundColor: '#017bff'
                         }}
 
 
@@ -105,7 +105,7 @@ export default LoginScreen;
 const styles = StyleSheet.create({
     container: {
       flex: 1, 
-      backgroundColor: '#3a9cde'
+      backgroundColor: '#017bff'
     },
     header: {
         flex: 1,

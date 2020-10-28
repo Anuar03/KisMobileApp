@@ -11,12 +11,16 @@ import WellHistory from './WellHistory';
 const Tab = createMaterialBottomTabNavigator();
 
 
-const WellBar = () => {
+const WellBar = ({route}) => {
+
+  const uwi = route.params.uwi;
+
     return (
         <Tab.Navigator>
             <Tab.Screen 
-              name="WellInfo" 
-              component={WellInfo} 
+              name="WellInfo"
+              children={() => <WellInfo uwi={uwi}/>}
+              // component={WellInfo}
               options={{
                 tabBarLabel: 'Карточка',
                 tabBarIcon: ({ color }) => (

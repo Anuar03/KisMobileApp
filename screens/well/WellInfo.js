@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet} from 'react-native';
 
-const WellInfo = () => {
+const WellInfo = ({uwi}) => {
     return (
             <View style={styles.wellName}>
                 <Text
@@ -11,14 +11,9 @@ const WellInfo = () => {
                         fontFamily: 'serif'
                     }}
                 >
-                    KZH_0000_W
-                </Text>
-
-                
-            </View>
-
-
-        
+                    {uwi}
+                </Text>    
+            </View>  
     )
 }
 
