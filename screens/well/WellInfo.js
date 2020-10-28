@@ -3,13 +3,22 @@ import { View, Text, Button, StyleSheet} from 'react-native';
 
 const WellInfo = () => {
     return (
-        <View style = {styles.container}>
-            <Text>Basic Indicators Screen</Text>
-            <Button
-                title="Click Here"
-                onPress={() => alert('Button clicked')}>
-            </Button>
-        </View>
+            <View style={styles.wellName}>
+                <Text
+                    color='#3F57D2'
+                    style={{
+                        fontSize: 24,
+                        fontFamily: 'serif'
+                    }}
+                >
+                    KZH_0000_W
+                </Text>
+
+                
+            </View>
+
+
+        
     )
 }
 
@@ -20,5 +29,18 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+
+    wellName: {
+        marginTop: 5,
+        height: 100,
+        borderRadius: 10,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 25,
+        marginHorizontal: 10,
+        borderWidth: 0.5
+
     }
 })

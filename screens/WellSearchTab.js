@@ -16,7 +16,7 @@ const WellSearchTab = ({navigation}) => {
             initialRouteName='WellSearch'
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#03cffc',
+                    backgroundColor: '#3a9cde',
                 },
                 headerTintColor: '#fff',
                 headerTitleStyle: {
@@ -34,14 +34,14 @@ const WellSearchTab = ({navigation}) => {
                         <Icon.Button 
                             name='ios-menu' 
                             size={25} 
-                            backgroundColor='#03cffc'
+                            backgroundColor='#3a9cde'
                             onPress={() => navigation.openDrawer()}>
                         </Icon.Button>
                     ),
                     headerRight: () => (
                         <Icon.Button
                             size={25} 
-                            backgroundColor='#03cffc'
+                            backgroundColor='#3a9cde'
                             onPress={() => {}}>
                         </Icon.Button>
                     )
